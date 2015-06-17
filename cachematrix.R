@@ -1,7 +1,9 @@
-## The pair functions is to cache the inverse of the matrix
-## 
+## The pair functions is to solve and cache the inverse of the matrix
 
-## makeCacheMatrix is list of functions, which could set both stored matrix and its cached inverse matrix and get the stored matrix and its cached inverse matrix(if it is ever cached)
+
+## makeCacheMatrix is list of functions, which could set both stored matrix 
+## and its cached inversed matrix and get the stored matrix and its cached 
+## inversed matrix(if it is ever cached)
 
 makeCacheMatrix <- function(x = matrix()) {
 		m <- NULL
@@ -16,7 +18,10 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## cachSolve is to first check the cached space if it has an inverse matrix. If yes, it will return the cached inverse matrix; if not, it will solve the inverse matrix, stores in the cached space and reture it.
+## cachSolve is to first check the cached space if it has an inversed matrix.
+## If yes, it will return the cached inverse matrix; 
+## if not, it will solve the inversed matrix, stores in the cached space and
+## return it.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
